@@ -10,3 +10,7 @@ let cursorCoordinates;
 
 console.log('Hello World!!!');
 
+firstNameUser = 'Maria';
+
+console.log('firstNameUser is', firstNameUser);
+
