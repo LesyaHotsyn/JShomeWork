@@ -1,15 +1,13 @@
-let ageUser;
-let firstNameUser;
-let lastNameUser;
+let firstNumber;
+let secondNumber;
 
-let newUser;
-let shoppingList;
-let onlineStatusUser;
-let employeeSalary;
-let cursorCoordinates;
+firstNumber = prompt("Введіть перше число");
+secondNumber = prompt("Введіть друге число")ж
 
-console.log('Hello World!!!');
-
-firstNameUser = 'Maria';
-
-console.log('firstNameUser is', firstNameUser);
+if (firstNumber == secondNumber) {
+    alert("Числа рівні");
+} else if (firstNumber > secondNumber) {
+    alert("Число" + firstNumber + "більше!")
+} else {
+    alert("Число" + secondNumber + "більше!")
+}
