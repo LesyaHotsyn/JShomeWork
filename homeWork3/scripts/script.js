@@ -52,23 +52,14 @@ userAge = prompt("Скільки Вам років?");
 if (userAge < 12 || userAge > 80){
     alert("Вибачте, вхід заборонено!");
 } else if ((userAge >= 12 && userAge < 18)||(userAge > 60 && userAge <= 80 )) {
-    permission = prompt("Вам дозволили батьки чи опікуни? так чи ні?");
-    switch(permission) {
-        case "так":
-            alert("Чудово, проходьте! Приємних вражень!");
-            break;  
-        case "Так":
-            alert("Чудово, проходьте! Приємних вражень!");
-            break;   
-        case "yes":
-            alert("Чудово, проходьте! Приємних вражень!");
-            break;
-        case "Yes":
-            alert("Чудово, проходьте! Приємних вражень!");
-            break;  
-        default: 
-            alert("Вибачте, вхід заборонено!");
+    permission = confirm("Вам дозволили батьки чи опікуни?");
+
+    if(permission){
+        alert("Чудово, проходьте! Приємних вражень!");
+    } else {
+        alert("Вибачте, вхід заборонено!");
     }
+
 } else {
     alert("Проходьте! Приємних вражень!");
 }
