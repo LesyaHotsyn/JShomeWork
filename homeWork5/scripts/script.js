@@ -1,9 +1,10 @@
-const LOGIN = 'ADMIN';
-const PASSWORD = '123';
+var LOGIN = 'admin';
+const PASSWORD = '1q2w3e';
 
 const authorize = () => {
     let userPassword;
     let userLogin;
+    let isAuthSuccess = false;
 
     do{
         userLogin = prompt('Логін:');
@@ -12,21 +13,21 @@ const authorize = () => {
             continue;
         }
 
-        userLogin = prompt('Пароль:');
-        if(!userLogin){
+        userPassword = prompt('Пароль:');
+        if(!userPassword){
             alert('Введіть пароль');
             continue;
         }
 
-        if(userPassword !== PASSWORD || userLogin !== LOGIN){
-            alert('Дані не вірні!');
-            continue;
-        }
+        if(userPassword === PASSWORD || userLogin === LOGIN){
+            isAuthSuccess = true
+        } else { 
+            alert('Дані вказано не вірно!');
+        } 
 
-        break;
-    } while (true);
+    } while (!isAuthSuccess);
 
-    alert("Welcome");
+    alert("Welcome!");
 };
 
 authorize();
