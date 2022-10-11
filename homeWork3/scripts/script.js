@@ -26,7 +26,7 @@ arithmeticOperation = prompt("Введіть дію над числами. Це 
 
 switch (arithmeticOperation) {
     case "+":
-        sum = firstNumber + secondNumber;
+        sum = Number(firstNumber) + Number(secondNumber);
         alert("Сума чисел дорівнює: " + sum);
         break;
     case "-":
