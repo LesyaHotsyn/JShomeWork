@@ -1,4 +1,4 @@
-var LOGIN = 'admin';
+const LOGIN = 'admin';
 const PASSWORD = '1q2w3e';
 
 const authorize = () => {
@@ -48,5 +48,5 @@ const drawPyramid = (height) => {
     }
 };
 
-const desiredHeight = Number(prompt("Задайте висоту пірамідки"));
-drawPyramid(desiredHeight);
+//const desiredHeight = Number(prompt("Задайте висоту пірамідки"));
+//drawPyramid(desiredHeight);
